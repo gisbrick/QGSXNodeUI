@@ -1,0 +1,56 @@
+{
+  "name": "@gisbrick/qgsx-node-ui",
+  "version": "1.0.0",
+  "description": "Frontend Storybook application for content indexing based on QGSXUI components",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "i18next": "^25.2.1",
+    "@gisbrick/qgsx-ui": "github:gisbrick/QGSXUI#V1.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^15.5.3"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@storybook/addon-essentials": "^8.5.6",
+    "@storybook/addon-interactions": "^8.5.6",
+    "@storybook/addon-links": "^8.5.6",
+    "@storybook/blocks": "^8.5.6",
+    "@storybook/react": "^8.5.6",
+    "@storybook/react-vite": "^8.5.6",
+    "@storybook/test": "^8.5.6",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "eslint-plugin-storybook": "^0.11.2",
+    "globals": "^15.9.0",
+    "msw": "^2.3.0",
+    "msw-storybook-addon": "^2.0.3",
+    "storybook": "^8.5.6",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1",
+    "vite": "^5.4.1"
+  },
+  "resolutions": {
+    "jackspeak": "2.1.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
+}
