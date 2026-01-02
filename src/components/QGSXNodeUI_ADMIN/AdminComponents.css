@@ -1,0 +1,42 @@
+/**
+ * Estilos para componentes de administración
+ */
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.admin-table thead {
+  background-color: var(--color-hover, #f5f5f5);
+}
+
+.admin-table th {
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-border, #ddd);
+  color: var(--color-text-primary, #333);
+}
+
+.admin-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--color-border, #ddd);
+  color: var(--color-text-primary, #333);
+}
+
+.admin-table tbody tr:hover {
+  background-color: var(--color-hover, #f5f5f5);
+}
+
+.admin-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+

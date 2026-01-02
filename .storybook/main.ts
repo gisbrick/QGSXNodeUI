@@ -16,13 +16,27 @@ const config: StorybookConfig = {
   },
   async viteFinal(config) {
     // Alias para QGSXUI instalado desde GIT
-    const qgsxuiPath = path.resolve(__dirname, '../node_modules/intro-storybook-react-template/src');
+    // El paquete @gisbrick/qgsx-ui se instala desde https://github.com/gisbrick/QGSXUI.git#V1.0.2
+    // Usamos path.resolve con process.cwd() que Storybook puede manejar mejor
+    const qgsxuiPath = path.resolve(process.cwd(), 'node_modules/@gisbrick/qgsx-ui/src');
     return mergeConfig(config, {
       resolve: {
         alias: {
           ...config.resolve?.alias,
           '@qgsxui': qgsxuiPath,
           'qgsxui': qgsxuiPath,
+        },
+      },
+      server: {
+        ...config.server,
+        proxy: {
+          // Proxy para API en Storybook (evita problemas de CORS)
+          '/api': {
+            target: 'http://localhost:3001',
+            changeOrigin: true,
+            secure: false,
+            ws: false, // Deshabilitar WebSocket proxy si no es necesario
+          },
         },
       },
     });

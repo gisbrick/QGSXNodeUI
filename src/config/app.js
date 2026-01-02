@@ -13,7 +13,15 @@ export const FEATURE_FLAGS = {
   ENABLE_DEBUG_LOGS: true,
 };
 
+/**
+ * Configuración de la aplicación
+ */
+export const APP_CONFIG = {
+  superadminUser: 'admin',
+};
+
 export default {
   FEATURE_FLAGS,
+  APP_CONFIG,
 };
 

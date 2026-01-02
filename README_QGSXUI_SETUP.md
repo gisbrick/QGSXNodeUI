@@ -121,6 +121,39 @@ export const Primary: Story = {
 };
 ```
 
+## Archivos Estáticos de Leaflet
+
+Los componentes QGS de QGSXUI (Map, Table, etc.) requieren archivos estáticos de Leaflet que deben estar disponibles en `public/leaflet/`.
+
+**Copia Automática**: Un script `postinstall` copia automáticamente los archivos de Leaflet desde `@gisbrick/qgsx-ui/public/leaflet` a `public/leaflet` cada vez que se instalan las dependencias.
+
+Si necesitas copiar los archivos manualmente:
+
+1. Copia la carpeta `node_modules/@gisbrick/qgsx-ui/public/leaflet` a `public/leaflet`
+2. O ejecuta el script manualmente: `node scripts/copy-leaflet.js`
+
+**Importante**: Los archivos de Leaflet se cargan como scripts estáticos (no módulos npm), por lo que deben estar en `public/` para ser servidos correctamente por el servidor de desarrollo o el build de producción.
+
+## Configuración de CORS y API
+
+### Desarrollo
+
+En desarrollo, se usa un **proxy de Vite/Storybook** para evitar problemas de CORS:
+
+- **Vite dev server**: Las peticiones a `/api/*` se redirigen automáticamente a `http://localhost:3001`
+- **Storybook**: Configurado en `.storybook/main.ts` con el mismo proxy
+
+No es necesario configurar CORS en desarrollo cuando se usa el proxy.
+
+### Producción
+
+En producción, debes configurar:
+
+1. **Variable de entorno** `VITE_API_BASE_URL` con la URL completa del backend
+2. **CORS en el backend** (`QGSXNodSrv`) configurando `CORS_ORIGIN` con el dominio de producción
+
+Ver `QGSXNodSrv/README_CORS.md` para más detalles sobre configuración de CORS.
+
 ## Notas Importantes
 
 1. **Dependencias**: Asegúrate de que QGSXUI tenga todas sus dependencias instaladas antes de usar sus componentes en QGSXNodeUI.
@@ -130,4 +163,6 @@ export const Primary: Story = {
 3. **Estilos CSS**: Si los componentes de QGSXUI tienen estilos CSS, asegúrate de importarlos o incluirlos en tu configuración de Storybook/Vite.
 
 4. **Compatibilidad de Versiones**: Mantén las versiones de React y otras dependencias compartidas sincronizadas entre QGSXUI y QGSXNodeUI.
+
+5. **CORS**: En desarrollo, el proxy maneja CORS automáticamente. En producción, configura CORS correctamente en el backend.
 

@@ -37,7 +37,108 @@
       "exit": "Salir",
       "empty": "—",
       "yes": "Sí",
-      "no": "No"
+      "no": "No",
+      "noResults": "No se encontraron resultados",
+      "noData": "No hay datos disponibles"
+    },
+    "pagination": {
+      "first": "Primera",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "last": "Última"
+    },
+    "unsavedChangesDialog": {
+      "title": "Cambios sin guardar",
+      "message": "Hay datos sin guardar, y si sale se perderán. ¿Desea guardar los datos antes de salir?"
+    }
+  },
+  "admin": {
+    "title": "Administración",
+    "error": {
+      "title": "Error de permisos",
+      "noPermission": "Sin permisos",
+      "noPermissionMessage": "No tiene permisos de administrador para acceder a este contenido.",
+      "checkPermissionsError": "Error verificando permisos"
+    },
+    "administrator": {
+      "title": "Alta de Administrador",
+      "username": "Nombre de usuario",
+      "usernamePlaceholder": "Ingrese el nombre de usuario",
+      "usernameRequired": "El nombre de usuario es requerido",
+      "createSuccess": "Administrador creado exitosamente",
+      "createError": "Error al crear el administrador",
+      "createButton": "Crear Administrador"
+    },
+    "unit": {
+      "title": "Alta de Unidad",
+      "unitName": "Nombre de la unidad",
+      "unitNamePlaceholder": "Ingrese el nombre de la unidad",
+      "unitNameRequired": "El nombre de la unidad es requerido",
+      "description": "Descripción",
+      "descriptionPlaceholder": "Ingrese una descripción (opcional)",
+      "path": "Ruta",
+      "pathPlaceholder": "Ingrese la ruta (opcional)",
+      "createSuccess": "Unidad creada exitosamente",
+      "createError": "Error al crear la unidad",
+      "createButton": "Crear Unidad"
+    },
+    "unitManager": {
+      "title": "Alta de Gestor de Unidad",
+      "unit": "Unidad",
+      "unitPlaceholder": "Seleccione una unidad",
+      "unitRequired": "Debe seleccionar una unidad",
+      "username": "Nombre de usuario",
+      "usernamePlaceholder": "Ingrese el nombre de usuario",
+      "usernameRequired": "El nombre de usuario es requerido",
+      "createSuccess": "Gestor asignado exitosamente",
+      "createError": "Error al asignar el gestor",
+      "createButton": "Asignar Gestor",
+      "loadingUnits": "Cargando unidades...",
+      "listTitle": "Gestores de Unidad",
+      "noManagers": "No hay gestores asignados a esta unidad",
+      "remove": "Eliminar",
+      "removeSuccess": "Gestor eliminado exitosamente",
+      "removeError": "Error al eliminar el gestor",
+      "removeConfirm": "¿Está seguro de que desea eliminar este gestor?",
+      "createdBy": "Creado por",
+      "createdAt": "Fecha de creación",
+      "loadUnitsError": "Error al cargar unidades",
+      "loadManagersError": "Error al cargar gestores",
+      "selectUnitFirst": "Debe seleccionar una unidad primero"
+    },
+    "administratorList": {
+      "title": "Lista de Administradores",
+      "loading": "Cargando administradores...",
+      "noAdministrators": "No hay administradores registrados",
+      "username": "Nombre de usuario",
+      "createdBy": "Creado por",
+      "createdAt": "Fecha de creación",
+      "actions": "Acciones",
+      "remove": "Eliminar",
+      "removeSuccess": "Administrador eliminado exitosamente",
+      "removeError": "Error al eliminar el administrador",
+      "removeConfirm": "¿Está seguro de que desea eliminar este administrador?",
+      "cannotRemoveSuperadmin": "No se puede eliminar el superadministrador del sistema",
+      "loadError": "Error al cargar administradores",
+      "superadmin": "Superadmin"
+    },
+    "unitList": {
+      "title": "Lista de Unidades",
+      "loading": "Cargando unidades...",
+      "noUnits": "No hay unidades registradas",
+      "unitName": "Nombre",
+      "description": "Descripción",
+      "path": "Ruta",
+      "actions": "Acciones",
+      "edit": "Editar",
+      "remove": "Eliminar",
+      "removeSuccess": "Unidad eliminada exitosamente",
+      "removeError": "Error al eliminar la unidad",
+      "removeConfirm": "¿Está seguro de que desea eliminar esta unidad?",
+      "editTitle": "Editar Unidad",
+      "updateSuccess": "Unidad actualizada exitosamente",
+      "updateError": "Error al actualizar la unidad",
+      "loadError": "Error al cargar unidades"
     }
   }
 }

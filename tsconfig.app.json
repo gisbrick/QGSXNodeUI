@@ -19,8 +19,8 @@
     /* Path aliases */
     "baseUrl": ".",
     "paths": {
-      "@qgsxui/*": ["node_modules/intro-storybook-react-template/src/*"],
-      "qgsxui/*": ["node_modules/intro-storybook-react-template/src/*"]
+      "@qgsxui/*": ["node_modules/@gisbrick/qgsx-ui/src/*"],
+      "qgsxui/*": ["node_modules/@gisbrick/qgsx-ui/src/*"]
     },
 
     /* Linting */

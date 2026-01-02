@@ -36,7 +36,108 @@
       "exit": "Exit",
       "empty": "—",
       "yes": "Yes",
-      "no": "No"
+      "no": "No",
+      "noResults": "No results found",
+      "noData": "No data available"
+    },
+    "pagination": {
+      "first": "First",
+      "previous": "Previous",
+      "next": "Next",
+      "last": "Last"
+    },
+    "unsavedChangesDialog": {
+      "title": "Unsaved Changes",
+      "message": "There are unsaved changes, and if you exit they will be lost. Do you want to save the data before exiting?"
+    }
+  },
+  "admin": {
+    "title": "Administration",
+    "error": {
+      "title": "Permission Error",
+      "noPermission": "No Permission",
+      "noPermissionMessage": "You do not have administrator permissions to access this content.",
+      "checkPermissionsError": "Error checking permissions"
+    },
+    "administrator": {
+      "title": "Create Administrator",
+      "username": "Username",
+      "usernamePlaceholder": "Enter username",
+      "usernameRequired": "Username is required",
+      "createSuccess": "Administrator created successfully",
+      "createError": "Error creating administrator",
+      "createButton": "Create Administrator"
+    },
+    "unit": {
+      "title": "Create Unit",
+      "unitName": "Unit name",
+      "unitNamePlaceholder": "Enter unit name",
+      "unitNameRequired": "Unit name is required",
+      "description": "Description",
+      "descriptionPlaceholder": "Enter a description (optional)",
+      "path": "Path",
+      "pathPlaceholder": "Enter path (optional)",
+      "createSuccess": "Unit created successfully",
+      "createError": "Error creating unit",
+      "createButton": "Create Unit"
+    },
+    "unitManager": {
+      "title": "Assign Unit Manager",
+      "unit": "Unit",
+      "unitPlaceholder": "Select a unit",
+      "unitRequired": "You must select a unit",
+      "username": "Username",
+      "usernamePlaceholder": "Enter username",
+      "usernameRequired": "Username is required",
+      "createSuccess": "Manager assigned successfully",
+      "createError": "Error assigning manager",
+      "createButton": "Assign Manager",
+      "loadingUnits": "Loading units...",
+      "listTitle": "Unit Managers",
+      "noManagers": "No managers assigned to this unit",
+      "remove": "Remove",
+      "removeSuccess": "Manager removed successfully",
+      "removeError": "Error removing manager",
+      "removeConfirm": "Are you sure you want to remove this manager?",
+      "createdBy": "Created by",
+      "createdAt": "Creation date",
+      "loadUnitsError": "Error loading units",
+      "loadManagersError": "Error loading managers",
+      "selectUnitFirst": "You must select a unit first"
+    },
+    "administratorList": {
+      "title": "Administrators List",
+      "loading": "Loading administrators...",
+      "noAdministrators": "No administrators registered",
+      "username": "Username",
+      "createdBy": "Created by",
+      "createdAt": "Creation date",
+      "actions": "Actions",
+      "remove": "Remove",
+      "removeSuccess": "Administrator removed successfully",
+      "removeError": "Error removing administrator",
+      "removeConfirm": "Are you sure you want to remove this administrator?",
+      "cannotRemoveSuperadmin": "Cannot remove the system superadministrator",
+      "loadError": "Error loading administrators",
+      "superadmin": "Superadmin"
+    },
+    "unitList": {
+      "title": "Units List",
+      "loading": "Loading units...",
+      "noUnits": "No units registered",
+      "unitName": "Name",
+      "description": "Description",
+      "path": "Path",
+      "actions": "Actions",
+      "edit": "Edit",
+      "remove": "Remove",
+      "removeSuccess": "Unit removed successfully",
+      "removeError": "Error removing unit",
+      "removeConfirm": "Are you sure you want to remove this unit?",
+      "editTitle": "Edit Unit",
+      "updateSuccess": "Unit updated successfully",
+      "updateError": "Error updating unit",
+      "loadError": "Error loading units"
     }
   }
 }

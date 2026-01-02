@@ -9,9 +9,19 @@ export default defineConfig({
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
       // Alias para QGSXUI instalado desde GIT
-      // El paquete se instaló como "intro-storybook-react-template" desde https://github.com/gisbrick/QGSXUI.git#V1.0.2
-      '@qgsxui': path.resolve(__dirname, 'node_modules/intro-storybook-react-template/src'),
-      'qgsxui': path.resolve(__dirname, 'node_modules/intro-storybook-react-template/src'),
+      // El paquete @gisbrick/qgsx-ui se instala desde https://github.com/gisbrick/QGSXUI.git#V1.0.2
+      '@qgsxui': path.resolve(__dirname, 'node_modules/@gisbrick/qgsx-ui/src'),
+      'qgsxui': path.resolve(__dirname, 'node_modules/@gisbrick/qgsx-ui/src'),
+    },
+  },
+  server: {
+    proxy: {
+      // Proxy para API en desarrollo (evita problemas de CORS)
+      '/api': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+        secure: false,
+      },
     },
   },
 })
