@@ -254,8 +254,8 @@
   integrity sha512-+WxNld5ZCJHvPQCr/GnzCTVREyStrAJjisUPtUxG5ngDA8TMlPnKp6dddlTpai4+1GNmltAeuk1hJEkBohwZYA==
 
 "@gisbrick/qgsx-ui@github:gisbrick/QGSXUI#V1.0.3":
-  version "1.0.2"
-  resolved "git+ssh://git@github.com/gisbrick/QGSXUI.git#7f32bc6320d01bff47647e171b8baa6dc6d53dd7"
+  version "1.0.3"
+  resolved "git+ssh://git@github.com/gisbrick/QGSXUI.git#008f17a80100347fe22e33243b4e92577b6aad38"
   dependencies:
     "@fortawesome/fontawesome-free" "^7.0.0"
     font-gis "^1.0.6"
