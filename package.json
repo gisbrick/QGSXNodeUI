@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@gisbrick/qgsx-ui": "github:gisbrick/QGSXUI#V1.0.2",
+    "@gisbrick/qgsx-ui": "github:gisbrick/QGSXUI#V1.0.3",
     "font-gis": "^1.0.6",
     "i18next": "^25.2.1",
     "react": "^18.2.0",
