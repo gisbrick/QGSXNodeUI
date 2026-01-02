@@ -255,7 +255,7 @@
 
 "@gisbrick/qgsx-ui@github:gisbrick/QGSXUI#V1.0.3":
   version "1.0.3"
-  resolved "git+ssh://git@github.com/gisbrick/QGSXUI.git#d14af2b3d0f2dd99a8df3519d061b471cebcfd52"
+  resolved "git+ssh://git@github.com/gisbrick/QGSXUI.git#cfd5403a45b027fb81cb5a91e6c92ba9692e95f7"
   dependencies:
     "@fortawesome/fontawesome-free" "^7.0.0"
     font-gis "^1.0.6"
